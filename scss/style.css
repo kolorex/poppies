@@ -27,8 +27,6 @@ section, footer {
 /**Fin Menu**/
 /*Mapa**/
 .mapa {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 10px;
   -webkit-box-pack: center;
@@ -38,13 +36,11 @@ section, footer {
 }
 
 .mapaSocial {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 /*Fin Mapa*/
-/*Carrousel*/
+
 /**Imagenes Inicio**/
 .card {
   width: 90%;
@@ -69,77 +65,172 @@ section, footer {
 }
 
 /**Fin Imagenes Inicio**/
-/**Formulario*/
-form {
-  width: 300px;
-  padding: 16px;
-  border-radius: 10px;
-  margin: auto;
-  background-color: #fc8e9e;
-  margin-top: 50px;
-  font-family: 'Indie Flower', cursive;
+
+/* Contact Form */
+.content, h4 {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  font-family: 'Poppins';
+  font-weight: bolder;
 }
 
-form label {
-  width: 72px;
-  display: inline-block;
+
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-form input[type="text"],
-form input[type="email"] {
-  width: 180px;
-  padding: 3px 10px;
-  border: 1px solid #f6f6f6;
-  border-radius: 3px;
-  background-color: #f6f6f6;
-  margin: 8px 0;
-  display: inline-block;
+.contact-form form .block {
+  grid-column: 1 / 3;
 }
 
-form input[type="submit"] {
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
   width: 100%;
-  padding: 8px 16px;
-  margin-top: 32px;
-  border: 1px solid white;
-  border-radius: 5px;
-  display: block;
-  color: white;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid #fc8e9e;
+}
+
+.contact-form form button {
+  background-color: #fc8e9e;
+  color: #000;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background-color: #1a1718;
+  color: #fc8e9e;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+
+.contact-info {
   background-color: #fc8e9e;
 }
 
-form input[type="reset"] {
-  width: 100%;
-  padding: 8px 16px;
-  margin-top: 32px;
-  border: 1px solid white;
-  border-radius: 5px;
-  display: block;
-  color: white;
-  background-color: #fc8e9e;
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
 }
 
-form input[type="submit"]:hover {
-  cursor: pointer;
+.contact-info ul {
+  list-style-type: none;
 }
 
-textarea {
-  width: 100%;
-  height: 100px;
-  border: 1px solid #f6f6f6;
-  border-radius: 3px;
-  background-color: #f6f6f6;
-  margin: 8px 0;
-  resize: none;
-  display: block;
+.contact-info ul li {
+  padding: 0 0 1em 0;
 }
+.contactonew{
+  font-size: 25px;
+}
+
+/* Large Screen */
+
+@media (min-width: 700px) {
+
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .contact-wrapper > * {
+    padding: 2em;
+  }
+
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+    padding: 1em;
+  }
+}
+
 
 /**Fin formulario**/
 /**Footer**/
-footer {
-  width: auto;
-  height: 30px;
+.footer-bs {
   background-color: #fc8e9e;
-  margin: auto;
+  color: rgba(255,255,255,1.00);
+}
+.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { 
+  padding:10px 25px; 
+}
+.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { 
+  border-color: transparent;
+ }
+.footer-bs .footer-brand h2 {
+   margin:0px 0px 10px; 
+  }
+.footer-bs .footer-brand p { 
+  font-size:12px; 
+  color:rgba(255,255,255,0.70); 
+}
+
+.footer-bs .footer-nav ul.pages { 
+  list-style:none; 
+  padding:0px; 
+}
+.footer-bs .footer-nav ul.pages li { 
+  padding:5px 0px;
+}
+.footer-bs .footer-nav ul.pages a { 
+  color:rgba(255,255,255,1.00); 
+  font-weight:bold; 
+  text-transform:uppercase; 
+}
+.footer-bs .footer-nav ul.pages a:hover { 
+  color:rgba(255,255,255,0.80); 
+  text-decoration:none; 
+}
+.footer-bs .footer-nav h4 {
+font-size: 11px;
+text-transform: uppercase;
+letter-spacing: 3px;
+margin-bottom: 5px;
+}
+
+.footer-bs .footer-nav ul.list { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.list li { padding:5px 0px;}
+.footer-bs .footer-nav ul.list a { color:rgba(255,255,255,0.80); }
+.footer-bs .footer-nav ul.list a:hover { color:rgba(255,255,255,0.60); text-decoration:none; }
+
+.footer-bs .footer-social ul { list-style:none; padding:0px; }
+.footer-bs .footer-social h4 {
+font-size: 11px;
+text-transform: uppercase;
+letter-spacing: 3px;
+}
+.footer-bs .footer-social li { padding:5px 4px;}
+.footer-bs .footer-social a { color:rgba(255,255,255,1.00);}
+.footer-bs .footer-social a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+
+.footer-bs .footer-ns h4 {
+font-size: 11px;
+text-transform: uppercase;
+letter-spacing: 3px;
+margin-bottom:10px;
+}
+.footer-bs .footer-ns p { font-size:12px; color:rgba(255,255,255,0.70); }
+
+@media (min-width: 768px) {
+.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
 }
 
 /**Fin footer**/
@@ -175,7 +266,7 @@ footer {
 }
 
 /**Fin quienes somos**/
-/*Galeria fotos **/
+
 /**Deco tips!**/
 .card-text-card {
   font-size: 16px;
@@ -189,7 +280,7 @@ footer {
 
 h4 {
   margin-top: 0;
-  font-family: "Open Sans";
+  font-family: "Poppins";
 }
 
 .card.card-horizontal {
@@ -228,6 +319,18 @@ h4 {
     border-bottom-right-radius: 0.25rem;
     max-width: 100%;
   }
+  .contacto{
+    display: flex;
+    flex-direction: column;
+  }
+  .mapa__contacto{
+    justify-content: center;
+    text-align: center;
+  }
+  .datos__empresa{
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 /**Fin deco tips**/
@@ -240,5 +343,7 @@ h4 {
   .mapa {
     width: 80%;
   }
+  
 }
 /*# sourceMappingURL=style.css.map */
+
