@@ -6,8 +6,8 @@
     <title>Poppies - Contactanos!</title>
     <meta name="description" content="Bienvenidos a Poppies! Objetos diseñados y hechos con amor! Stock disponible y a pedido">
     <meta name="keywords" content="Poppies, tela, manualidades, resistencia, emprendimiento, contaco, contactanos, hecho a mano, con amor">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/style.css">    
     <link rel="icon" type="image/JPG" href="imagenes/logo3.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
@@ -46,39 +46,100 @@
           </div>
         </div>
       </nav>  <!--Fin Menu Nav-->                            
-     
-    
-         <section class="contacto"><!--Formulario-->
-            <div>
-                <form action="#" target="" method="get" name="formDatosPersonales">
-    
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder=""/>
+      <div class="content"><!--Inicio formulario-->
+        <h1 class="">Contactate con nosotros!</h1>
+        <div class="contact-wrapper">
+      
+          <div class="contact-form">
+      
             
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" id="apellido" placeholder=""/>
-            
-                <label for="email" />Email</label>
-                <input type="email" name="email" id="email" placeholder="" required />
-            
-                <label for="asunto">Asunto</label>
-                <input type ="text" name="asunto" id="asunto" placeholder=""/>
-            
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" for="mensaje" placeholder="" maxlength="300"></textarea>
-                
-                <input type="submit" name="enviar" value="Enviar datos"/>
-                <input type="reset" value="Limpiar formulario"/>
-            
-                </form>
-            </div>
-        </section><!--Fin Formulario-->
-    <footer><!--Footer-->
-            <p>© Copyright 2020 Poppies</p>
-    </footer><!--Fin footer-->
-    <script src="js/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+            <form action="/">
+              <p>
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="Nombre">
+              </p>
+              <p>
+                <label for="Apellido">Apellido</label>
+                <input type="text" name="Apellido">
+              </p>
+              <p>
+                <label for="phone">Telefono</label>
+                <input type="tel"  required name="phone">
+              </p>
+              <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+              </p>
+              <p class="block">
+                <label for="message">Mensaje</label>
+                <textarea name="message" rows="3"></textarea>
+              </p>
+              <p class="block">
+                <button type="submit">Enviar</button>
+              </p>
+            </form>
+          </div>
+      
+          <div class="contact-info">
+            <h4>Datos de contacto</h4>
+            <ul>
+              <li><i class="fas fa-map-marker-alt"></i> Angel Peñaloza 778</li>
+              <li><i class="fab fa-whatsapp-square"></i> 111 111 1111</li>
+              <li><i class="fas fa-envelope-open-text"></i> poppiesshowroom@gmail.com</li>
+            </ul>
+            <p class="contactonew">No olvides suscribirte a nuestro Newsletter!</p>
+            <p>© 2020 Resistencia-Chaco, Argentina.</p>
+          </div>
+      
+        </div>
+      </div><!--Fin formulario-->
+        <footer class="footer-bs"><!--Inicio Footer-->
+          <div class="row">
+            <div class="col-md-3 footer-brand animated fadeInLeft">
+                <h2>Poppies!</h2>
+                <br></br>
+                <br></br>
+                  <p>© 2020 Resistencia-Chaco, Argentina.</p>
+              </div>
+            <div class="col-md-4 footer-nav animated fadeInUp">
+                <h4>Menu —</h4>
+                <div class="col-md-6">
+                      <ul class="pages">
+                          <li><a href="index.html">Inicio</a></li>
+                          <li><a href="quienessomos.html">Quienes somos</a></li>
+                          <li><a href="productos.html">Deco tips</a></li>
+                          <li><a href="fotos.html">Fotos</a></li>
+                          <li><a href="contacto.html">Contacto</a></li>
+                      </ul>
+                  </div>
+              </div>
+            <div class="col-md-2 footer-social animated fadeInDown">
+                <h4>Seguinos en</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Google Plus</a></li>
+                  </ul>
+              </div>
+            <div class="col-md-3 footer-ns animated fadeInRight">
+                <h4>Suscribite a nuestro Newsletter!</h4>
+                  <p>Sé el primero en descubrir las últimas noticias dentro de Poppies!. Conocé todas las novedades y lanzamientos de nuestros productos.</p>
+                  <p>
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Email">
+                        <span class="input-group-btn">
+                          <button><svg width="31px" height="31px" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                          </svg>  </button>                
+                        </span>
+                      </div>
+                   </p>
+              </div>
+          </div>
+      </footer><!--Fin Footer-->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/a097a06bcd.js" crossorigin="anonymous"></script>
 </body>
 </html>
